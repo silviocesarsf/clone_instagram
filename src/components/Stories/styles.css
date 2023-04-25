@@ -1,0 +1,30 @@
+.stories-container {
+	background-image: linear-gradient(
+		to right,
+		transparent 65%,
+		black
+	);
+	height: 90px;
+	max-width: 58%;
+	overflow-x: auto;
+	gap: 1rem;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.stories-container::-webkit-scrollbar {
+	display: none;
+}
+
+.storie-user {
+	cursor: pointer;
+	z-index: -1;
+	flex-shrink: 0;
+}
+
+.storie-user_name {
+	position: absolute;
+	bottom: -1%;
+	font-size: 0.8em;
+	text-transform: lowercase;
+}

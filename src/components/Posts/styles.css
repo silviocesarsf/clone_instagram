@@ -1,0 +1,73 @@
+.post-container {
+	height: 850px;
+	width: 500px;
+	background-color: red;
+	position: relative;
+}
+
+.post-header {
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	background-color: black;
+}
+
+.post-header .post-photo_user div {
+	margin-right: 10px;
+}
+
+.post-header .post-username {
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: lowercase;
+}
+
+.post-date {
+	font-weight: lighter;
+	font-size: 0.8em;
+}
+
+.post-date::before {
+	content: "·";
+	margin: 0 10px;
+}
+
+.post-header .post-location {
+	font-size: 0.7em;
+}
+
+.post-header .post-button_more {
+	position: absolute;
+	right: 2%;
+	top: 5%;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.post-details_container {
+	height: 260px;
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	background-color: blue;
+	padding: 10px 1rem;
+}
+
+.post-details_header {
+	font-size: 1.8em;
+}
+
+.post-details_header .buttons-details_left,
+.buttons-details_right :nth-child(n) {
+	cursor: pointer;
+}
+
+.post-details_likes {
+	font-size: 0.86em;
+	font-weight: lighter;
+}
+
+.post-details_likes .number_likes {
+	margin: 0 4px;
+	font-weight: bold;
+}
