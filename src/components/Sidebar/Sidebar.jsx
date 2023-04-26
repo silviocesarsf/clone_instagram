@@ -26,7 +26,7 @@ const Sidebar = () => {
 			</div>
 			<div className="navlinks">
 				<ul>
-					<div>
+					<div style={{ fontWeight: "bold" }}>
 						<AiFillHome className="icon-navlink" /> Página
 						inicial
 					</div>

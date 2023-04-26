@@ -11,6 +11,8 @@ const Home = () => {
 			<Posts />
 			<Posts />
 			<Posts />
+			<Posts />
+			<Posts />
 		</Section>
 	);
 };

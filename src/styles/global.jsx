@@ -18,6 +18,19 @@ export const GlobalStyles = createGlobalStyle`
         color: ${(props) => props.theme.colors.text_color};
     }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
     button {
         cursor: pointer;
     }

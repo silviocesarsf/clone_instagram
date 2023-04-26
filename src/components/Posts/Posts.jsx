@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "../../styles/Container/Container";
 import "./styles.css";
-import userPlaceholder from "../../assets/user_placeholder.png";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiFillHeart } from "react-icons/ai";
 import { TbMessageCircle2 } from "react-icons/tb";
@@ -15,9 +14,21 @@ import { motion } from "framer-motion";
 const Posts = () => {
 	const [liked, setLiked] = useState(false);
 	const [bookmarked, setBookmarked] = useState(false);
+	const [randomId, setRandomId] = useState(Math.random());
+
+	const min = 650;
+	const max = 6305;
+	const randomNumber = Math.floor(
+		Math.random() * (max - min + 1) + min
+	);
+	const [numberLikes, setNumberLikes] = useState(randomNumber);
 
 	const handleLiked = () => {
 		setLiked(!liked);
+		setNumberLikes(numberLikes + 1);
+		if (liked === true) {
+			setNumberLikes(numberLikes - 1);
+		}
 	};
 
 	const handleBookmarked = () => {
@@ -25,7 +36,13 @@ const Posts = () => {
 	};
 
 	return (
-		<Container className="post-container">
+		<Container
+			style={{
+				backgroundImage: `url("https://source.unsplash.com/random/?random=${randomId}")`,
+			}}
+			onLoad={() => console.log("Carregou!")}
+			className="post-container"
+		>
 			<Container
 				justify="left"
 				align="flex-start"
@@ -41,9 +58,9 @@ const Posts = () => {
 					align="left"
 					dir="column"
 				>
-					<div className="post-username">
-						anyUser <span className="post-date">2 d</span>
-					</div>
+					<Container gap="10px" className="post-username">
+						anyUser<span className="post-date">2d</span>
+					</Container>
 					<div className="post-location">Venceslau</div>
 				</Container>
 				<div className="post-button_more">...</div>
@@ -103,7 +120,8 @@ const Posts = () => {
 					<UserName style={{ margin: "0 4px" }}>
 						anyUser
 					</UserName>{" "}
-					e outras <span className="number_likes">9.142</span>{" "}
+					e outras{" "}
+					<span className="number_likes">{numberLikes}</span>{" "}
 					pessoas
 				</Container>
 				<Container

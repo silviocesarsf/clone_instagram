@@ -8,8 +8,7 @@
 	height: 120px;
 	max-width: 45%;
 	overflow-x: auto;
-	/* gap: 1rem; */
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 	position: relative;
 }
 

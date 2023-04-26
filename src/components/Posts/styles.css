@@ -2,9 +2,8 @@
 	margin: 2rem 0;
 	height: 850px;
 	width: 500px;
-	background-image: url("https://source.unsplash.com/random/?nature/");
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	position: relative;
 }
 
@@ -29,11 +28,11 @@
 	font-weight: lighter;
 	font-size: 0.8em;
 }
-
+/* 
 .post-date::before {
 	content: "·";
 	margin: 0 10px;
-}
+} */
 
 .post-header .post-location {
 	font-size: 0.7em;
@@ -85,4 +84,5 @@
 .post-comments_view_more {
 	color: #bebebe;
 	font-size: 0.9em;
+	cursor: pointer;
 }

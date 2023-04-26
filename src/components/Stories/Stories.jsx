@@ -11,100 +11,100 @@ const Stories = () => {
 			className="stories-container"
 		>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 			<UserPhoto
-				height="70px"
-				width="70px"
+				height="60px"
+				width="60px"
 				className="storie-user"
 				storie={true}
 			>
-				<span className="storie-user_name">@anyUser</span>
+				<span className="storie-user_name">anyUser</span>
 			</UserPhoto>
 		</Container>
 	);
