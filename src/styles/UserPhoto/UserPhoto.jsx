@@ -8,4 +8,27 @@ export const UserPhoto = styled.div`
 	height: ${(props) => props.height};
 	width: ${(props) => props.width};
 	border-radius: 100%;
+	cursor: pointer;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&::before {
+		display: ${(props) => (props.storie ? "block" : "none")};
+		content: "";
+		position: absolute;
+		z-index: -1;
+		border-radius: 100%;
+		height: calc(${(props) => props.height} + 8px);
+		width: calc(${(props) => props.width} + 8px);
+		background-image: linear-gradient(
+			45deg,
+			#feda77,
+			#fa7e1e,
+			#d62976,
+			#962fbf,
+			#4f5bd5
+		);
+	}
 `;

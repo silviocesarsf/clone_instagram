@@ -6,7 +6,7 @@ import { UserPhoto } from "../../styles/UserPhoto/UserPhoto";
 const Stories = () => {
 	return (
 		<Container
-			align="flex-start"
+			align="center"
 			justify="left"
 			className="stories-container"
 		>
@@ -14,6 +14,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -21,6 +22,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -28,6 +30,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -35,6 +38,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -42,6 +46,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -49,6 +54,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -56,6 +62,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -63,6 +70,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -70,6 +78,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -77,6 +86,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -84,6 +94,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>
@@ -91,6 +102,7 @@ const Stories = () => {
 				height="70px"
 				width="70px"
 				className="storie-user"
+				storie={true}
 			>
 				<span className="storie-user_name">@anyUser</span>
 			</UserPhoto>

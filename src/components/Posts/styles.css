@@ -1,7 +1,10 @@
 .post-container {
+	margin: 2rem 0;
 	height: 850px;
 	width: 500px;
-	background-color: red;
+	background-image: url("https://source.unsplash.com/random/?nature/");
+	background-size: cover;
+	background-position: center;
 	position: relative;
 }
 
@@ -45,21 +48,23 @@
 }
 
 .post-details_container {
-	height: 260px;
+	height: 220px;
 	position: absolute;
 	bottom: 0%;
 	width: 100%;
-	background-color: blue;
-	padding: 10px 1rem;
+	background-color: black;
+	padding: 10px;
 }
 
-.post-details_header {
+.icon-details {
 	font-size: 1.8em;
+	opacity: 0.8;
+	cursor: pointer;
+	transition: 1s;
 }
 
-.post-details_header .buttons-details_left,
-.buttons-details_right :nth-child(n) {
-	cursor: pointer;
+.icon-details:hover {
+	opacity: 1;
 }
 
 .post-details_likes {
@@ -70,4 +75,14 @@
 .post-details_likes .number_likes {
 	margin: 0 4px;
 	font-weight: bold;
+}
+
+.post-comments_container .comment {
+	font-size: 0.9em;
+	margin-top: 10px;
+}
+
+.post-comments_view_more {
+	color: #bebebe;
+	font-size: 0.9em;
 }

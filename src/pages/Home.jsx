@@ -6,8 +6,10 @@ import Posts from "../components/Posts/Posts";
 const Home = () => {
 	return (
 		<Section>
-			
 			<Stories />
+			<Posts />
+			<Posts />
+			<Posts />
 			<Posts />
 		</Section>
 	);

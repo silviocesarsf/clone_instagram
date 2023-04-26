@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "../../styles/Container/Container";
 import "./styles.css";
 import userPlaceholder from "../../assets/user_placeholder.png";
 import { AiOutlineHeart } from "react-icons/ai";
+import { AiFillHeart } from "react-icons/ai";
 import { TbMessageCircle2 } from "react-icons/tb";
 import { BsSend } from "react-icons/bs";
 import { BsBookmark } from "react-icons/bs";
+import { BsFillBookmarkFill } from "react-icons/bs";
 import { UserPhoto } from "../../styles/UserPhoto/UserPhoto";
 import { UserName } from "../../styles/UserName/UserName";
+import { motion } from "framer-motion";
 
 const Posts = () => {
+	const [liked, setLiked] = useState(false);
+	const [bookmarked, setBookmarked] = useState(false);
+
+	const handleLiked = () => {
+		setLiked(!liked);
+	};
+
+	const handleBookmarked = () => {
+		setBookmarked(!bookmarked);
+	};
+
 	return (
 		<Container className="post-container">
 			<Container
@@ -38,19 +52,45 @@ const Posts = () => {
 				dir="column"
 				justify="flex-start"
 				align="space-between"
+				gap="10px"
 				className="post-details_container"
 			>
 				<Container
 					justify="space-between"
 					className="post-details_header"
 				>
-					<Container gap="10px" className="buttons-details_left">
-						<AiOutlineHeart />
-						<TbMessageCircle2 />
-						<BsSend />
+					<Container gap="20px" className="buttons-details_left">
+						{liked ? (
+							<AiFillHeart
+								onClick={handleLiked}
+								style={{ color: "#FF3040" }}
+								className="icon-details"
+							/>
+						) : (
+							<AiOutlineHeart
+								onClick={handleLiked}
+								className="icon-details"
+							/>
+						)}
+						<TbMessageCircle2 className="icon-details" />
+						<BsSend
+							className="icon-details"
+							style={{ fontSize: "1.5em" }}
+						/>
 					</Container>
 					<div className="buttons-details_right">
-						<BsBookmark />
+						{bookmarked ? (
+							<BsFillBookmarkFill
+								style={{ opacity: "1" }}
+								className="icon-details"
+								onClick={handleBookmarked}
+							/>
+						) : (
+							<BsBookmark
+								onClick={handleBookmarked}
+								className="icon-details"
+							/>
+						)}
 					</div>
 				</Container>
 				<Container justify="left" className="post-details_likes">
@@ -63,8 +103,38 @@ const Posts = () => {
 					<UserName style={{ margin: "0 4px" }}>
 						anyUser
 					</UserName>{" "}
-					e outras <span className="number_likes">9.142</span> pessoas
+					e outras <span className="number_likes">9.142</span>{" "}
+					pessoas
 				</Container>
+				<Container
+					justify="left"
+					className="post-subtitle_container"
+					gap="10px"
+				>
+					<UserName>silviocesarsf</UserName>
+					Subtitle here ! 😁
+				</Container>
+				<div className="post-comments_container">
+					<div className="post-comments_view_more">
+						Ver todos os 42 comentários
+					</div>
+					<Container
+						gap="10px"
+						justify="left"
+						className="comment"
+					>
+						<UserName>anyUser</UserName>
+						Lorem ipsum dolor sit, amet consectetur
+					</Container>
+					<Container
+						gap="10px"
+						justify="left"
+						className="comment"
+					>
+						<UserName>anyUser</UserName>
+						Lorem ipsum dolor sit, amet consectetur
+					</Container>
+				</div>
 			</Container>
 		</Container>
 	);
