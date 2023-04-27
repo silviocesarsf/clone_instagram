@@ -28,11 +28,6 @@
 	font-weight: lighter;
 	font-size: 0.8em;
 }
-/* 
-.post-date::before {
-	content: "·";
-	margin: 0 10px;
-} */
 
 .post-header .post-location {
 	font-size: 0.7em;
@@ -85,4 +80,38 @@
 	color: #bebebe;
 	font-size: 0.9em;
 	cursor: pointer;
+}
+
+@media (max-width: 516px) {
+	.post-container {
+		width: 400px;
+	}
+}
+
+@media (max-width: 405px) {
+	.post-container {
+		width: 350px;
+	}
+}
+
+@media (max-width: 360px) {
+	.post-container {
+		width: 320px;
+	}
+
+	.post-details_likes {
+		font-size: .7em;
+	}
+
+	.post-subtitle_container {
+		font-size: .8em;
+	}
+
+	.post-comments_view_more {
+		font-size: .7em;
+	}
+	
+	.post-comments_container .comment {
+		font-size: .7em;
+	}
 }

@@ -22,39 +22,48 @@ const Sidebar = () => {
 			dir="column"
 		>
 			<div className="logo-instagram">
-				<img src={logoInsta} alt="" />
+				<img src={logoInsta} alt="Logo instagram" />
 			</div>
 			<div className="navlinks">
 				<ul>
-					<div style={{ fontWeight: "bold" }}>
-						<AiFillHome className="icon-navlink" /> Página
-						inicial
+					<div
+						className="navlink-container"
+						style={{ fontWeight: "bold" }}
+					>
+						<AiFillHome className="icon-navlink" />{" "}
+						<p>Página inicial</p>
 					</div>
-					<div>
-						<BiSearch className="icon-navlink" /> Pesquisa
+					<div className="navlink-container">
+						<BiSearch className="icon-navlink" />
+						<p> Pesquisa</p>
 					</div>
-					<div>
+					<div className="navlink-container">
 						<MdOutlineExplore className="icon-navlink" />{" "}
-						Explorar
+						<p>Explorar</p>
 					</div>
-					<div>
-						<BiMoviePlay className="icon-navlink" /> Reels
+					<div className="navlink-container">
+						<BiMoviePlay className="icon-navlink" />{" "}
+						<p>Reels</p>
 					</div>
-					<div>
+					<div className="navlink-container">
 						<RiMessengerLine className="icon-navlink" />{" "}
-						Mensagens
+						<p>Mensagens</p>
 					</div>
-					<div>
+					<div className="navlink-container">
 						<AiOutlineHeart className="icon-navlink" />{" "}
-						Notificações
+						<p>Notificações</p>
 					</div>
-					<div>
+					<div className="navlink-container">
 						<CgAddR className="icon-navlink" />
-						Criar
+						<p>Criar</p>
 					</div>
-					<div>
-						<UserPhoto width="30px" height="30px" />
-						Perfil
+					<div className="navlink-container">
+						<UserPhoto
+							className="user-photo"
+							width="30px"
+							height="30px"
+						/>
+						<p>Perfil</p>
 					</div>
 				</ul>
 			</div>

@@ -20,8 +20,8 @@ export const UserPhoto = styled.div`
 		position: absolute;
 		z-index: -1;
 		border-radius: 100%;
-		height: calc(${(props) => props.height} + 8px);
-		width: calc(${(props) => props.width} + 8px);
+		height: calc(${(props) => props.height} + 5px);
+		width: calc(${(props) => props.width} + 5px);
 		background-image: linear-gradient(
 			45deg,
 			#feda77,

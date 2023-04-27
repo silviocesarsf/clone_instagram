@@ -9,17 +9,16 @@ import { BsBookmark } from "react-icons/bs";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { UserPhoto } from "../../styles/UserPhoto/UserPhoto";
 import { UserName } from "../../styles/UserName/UserName";
-import { motion } from "framer-motion";
 
 const Posts = () => {
 	const [liked, setLiked] = useState(false);
 	const [bookmarked, setBookmarked] = useState(false);
 	const [randomId, setRandomId] = useState(Math.random());
 
-	const min = 650;
-	const max = 6305;
+	const minLikes = 650;
+	const maxLikes = 11705;
 	const randomNumber = Math.floor(
-		Math.random() * (max - min + 1) + min
+		Math.random() * (maxLikes - minLikes + 1) + minLikes
 	);
 	const [numberLikes, setNumberLikes] = useState(randomNumber);
 

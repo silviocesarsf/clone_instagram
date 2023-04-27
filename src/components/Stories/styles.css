@@ -6,7 +6,7 @@
 	);
 	z-index: 10;
 	height: 120px;
-	max-width: 45%;
+	max-width: 500px;
 	overflow-x: auto;
 	margin-bottom: 1rem;
 	position: relative;
@@ -25,4 +25,22 @@
 	bottom: -2%;
 	font-size: 0.8em;
 	text-transform: lowercase;
+}
+
+@media (max-width: 510px) {
+	.stories-container {
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 405px) {
+	.stories-container {
+		max-width: 350px;
+	}
+}
+
+@media (max-width: 360px) {
+	.stories-container {
+		max-width: 320px;
+	}
 }
