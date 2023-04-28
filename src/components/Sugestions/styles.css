@@ -1,0 +1,17 @@
+.sugestions-container {
+    padding: 1rem;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+.user-recommended span {
+    position: absolute;
+    right: 5%;
+}
+
+@media (max-width: 1140px) {
+    .sugestions-container {
+        display: none;
+    }
+}

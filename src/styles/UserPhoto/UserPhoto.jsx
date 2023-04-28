@@ -27,8 +27,8 @@ export const UserPhoto = styled.div`
 			#feda77,
 			#fa7e1e,
 			#d62976,
-			#962fbf,
-			#4f5bd5
+			#aa4ccf,
+			#5f6cff
 		);
 	}
 `;

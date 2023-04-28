@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Section = styled.section`
 	min-height: 100vh;
 	width: 100%;
-	padding: 2rem 0;
-	padding-left: 2%;
+	padding: 1rem 0;
+	padding-right: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -15,8 +15,5 @@ export const Section = styled.section`
 	}
 
 	@media (max-width: 405px) {
-		
 	}
-
-	
 `;

@@ -42,35 +42,6 @@
 
 @media (max-width: 1035px) {
 	.sidebar {
-		background-color: black;
-		flex-direction: row !important;
-		justify-content: center !important;
-		align-items: center !important;
-		width: 100%;
-		height: 90px;
-		position: fixed;
-		top: 87%;
-	}
-
-	.logo-instagram {
-		display: none;
-	}
-
-	.navlinks ul {
-		padding: 0;
-		margin: 0;
-		flex-direction: row;
-	}
-
-	.navlinks .navlink-container p {
-		display: none;
-	}
-
-	.navlinks .navlink-container {
-		margin: 0 1rem;
-	}
-
-	.button-more_sidebar {
 		display: none !important;
 	}
 }

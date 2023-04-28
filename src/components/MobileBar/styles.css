@@ -1,0 +1,13 @@
+.mobile-bar {
+	height: 70px;
+	position: fixed;
+	bottom: 0%;
+	font-size: 1.6em;
+	border-top: 1px solid #363636;
+	z-index: 20;
+	background-color: black;
+}
+
+.mobile-bar_icon {
+	cursor: pointer;
+}
