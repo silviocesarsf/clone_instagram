@@ -13,6 +13,7 @@ export const UserPhoto = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 1px 1px 1px #000;
 
 	&::before {
 		display: ${(props) => (props.storie ? "block" : "none")};
@@ -20,8 +21,8 @@ export const UserPhoto = styled.div`
 		position: absolute;
 		z-index: -1;
 		border-radius: 100%;
-		height: calc(${(props) => props.height} + 5px);
-		width: calc(${(props) => props.width} + 5px);
+		height: calc(${(props) => props.height} + 7px);
+		width: calc(${(props) => props.width} + 7px);
 		background-image: linear-gradient(
 			45deg,
 			#feda77,
