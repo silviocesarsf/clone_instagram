@@ -11,6 +11,7 @@
 .logo-instagram img {
 	max-height: 60px;
 	filter: invert(100%);
+	margin-left: 10px;
 }
 
 .navlinks ul {
@@ -21,18 +22,29 @@
 }
 
 .navlinks .navlink-container {
-	margin: 1rem 0;
+	margin: 5px 0;
 	gap: 1rem;
 	font-size: 0.9em;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: left;
+	position: relative;
 	width: 100%;
+	transition: 0.1s;
+	height: 50px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.navlink-container:hover {
+	background-color: rgba(255, 255, 255, 0.144);
+	padding: 5px 0;
 }
 
 .navlinks .icon-navlink {
 	font-size: 1.9em;
+	margin-left: 10px;
 }
 
 .button-more_sidebar {

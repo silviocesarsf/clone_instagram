@@ -9,8 +9,11 @@ import { BsBookmark } from "react-icons/bs";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import { UserPhoto } from "../../styles/UserPhoto/UserPhoto";
 import { UserName } from "../../styles/UserName/UserName";
+import { Input } from "../../styles/Input/Input";
+import { TextSpan } from "../../styles/TextSpan/TextSpan";
+import { motion } from "framer-motion";
 
-const Posts = () => {
+const Posts = ({ nameUser }) => {
 	const [liked, setLiked] = useState(false);
 	const [bookmarked, setBookmarked] = useState(false);
 	const [randomId, setRandomId] = useState(Math.random());
@@ -21,6 +24,11 @@ const Posts = () => {
 		Math.random() * (maxLikes - minLikes + 1) + minLikes
 	);
 	const [numberLikes, setNumberLikes] = useState(randomNumber);
+	const [backgroundStyle, setBackgroundStyle] = useState({
+		backgroundImage: "linear-gradient(to top, black, #272727)",
+	});
+
+	const [textComment, setTextComment] = useState("");
 
 	const handleLiked = () => {
 		setLiked(!liked);
@@ -34,14 +42,42 @@ const Posts = () => {
 		setBookmarked(!bookmarked);
 	};
 
+	const handleImageLoading = () => {
+		setTimeout(() => {
+			setBackgroundStyle({
+				backgroundImage: `url("https://source.unsplash.com/random/?random=${randomId}")`,
+			});
+		}, 2000);
+	};
+
+	const handleTextComment = (e) => {
+		setTextComment(e.target.value);
+	};
+
+	useEffect(() => {
+		handleImageLoading();
+	}, []);
+
 	return (
 		<Container
-			style={{
-				backgroundImage: `url("https://source.unsplash.com/random/?random=${randomId}")`,
-			}}
-			onLoad={() => console.log("Carregou!")}
+			style={backgroundStyle}
+			onDoubleClick={handleLiked}
 			className="post-container"
 		>
+			{liked ? (
+				<>
+					<div className="post-container_liked">
+						<motion.div
+							initial={{ opacity: "0", scale: "0%" }}
+							animate={{ opacity: "1", scale: "100%" }}
+						>
+							<AiFillHeart className="heart-post_liked" />
+						</motion.div>
+					</div>
+				</>
+			) : (
+				""
+			)}
 			<Container
 				justify="left"
 				align="flex-start"
@@ -58,7 +94,8 @@ const Posts = () => {
 					dir="column"
 				>
 					<Container gap="10px" className="post-username">
-						anyUser<span className="post-date">2d</span>
+						{nameUser}
+						<span className="post-date">2d</span>
 					</Container>
 					<div className="post-location">Venceslau</div>
 				</Container>
@@ -128,7 +165,7 @@ const Posts = () => {
 					className="post-subtitle_container"
 					gap="10px"
 				>
-					<UserName>silviocesarsf</UserName>
+					<UserName>{nameUser}</UserName>
 					Subtitle here ! 😁
 				</Container>
 				<div className="post-comments_container">
@@ -150,6 +187,22 @@ const Posts = () => {
 					>
 						<UserName>anyUser</UserName>
 						Lorem ipsum dolor sit, amet consectetur
+					</Container>
+					<Container className="input-comment">
+						<Input
+							type="text"
+							onChange={handleTextComment}
+							placeholder="Adicione um comentário"
+						/>
+						{textComment.length > 0 ? (
+							<>
+								<TextSpan className="button-post_comment">
+									Publicar
+								</TextSpan>
+							</>
+						) : (
+							""
+						)}
 					</Container>
 				</div>
 			</Container>

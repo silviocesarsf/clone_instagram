@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./styles.css";
 import { Container } from "../../styles/Container/Container";
 import { UserPhoto } from "../../styles/UserPhoto/UserPhoto";
-const Stories = () => {
+const Stories = ({ isLoading }) => {
 	return (
 		<Container
 			align="center"

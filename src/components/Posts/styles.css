@@ -7,6 +7,24 @@
 	position: relative;
 }
 
+.post-container_liked {
+	position: absolute;
+	height: 850px;
+	width: 500px;
+	background-color: #00000070;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.heart-post_liked {
+	font-size: 7em;
+	color: red;
+	position: relative;
+	bottom: 50px;
+}
+
 .post-header {
 	padding: 10px;
 	position: absolute;
@@ -82,6 +100,15 @@
 	cursor: pointer;
 }
 
+.input-comment {
+	position: relative;
+}
+
+.button-post_comment {
+	position: absolute;
+	right: 5%;
+}
+
 @media (max-width: 516px) {
 	.post-container {
 		width: 400px;
@@ -100,18 +127,18 @@
 	}
 
 	.post-details_likes {
-		font-size: .7em;
+		font-size: 0.7em;
 	}
 
 	.post-subtitle_container {
-		font-size: .8em;
+		font-size: 0.8em;
 	}
 
 	.post-comments_view_more {
-		font-size: .7em;
+		font-size: 0.7em;
 	}
-	
+
 	.post-comments_container .comment {
-		font-size: .7em;
+		font-size: 0.7em;
 	}
 }

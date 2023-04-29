@@ -5,7 +5,7 @@ import { UserName } from "../../styles/UserName/UserName";
 import { TextSpan } from "../../styles/TextSpan/TextSpan";
 import "./styles.css";
 
-const Sugestions = () => {
+const Sugestions = ({ isLoading }) => {
 	const [users, setUsers] = useState([
 		{
 			name: "joaozin_",

@@ -13,6 +13,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { UserPhoto } from "../../styles/UserPhoto/UserPhoto";
 import { useMediaQuery } from "react-responsive";
 import MobileBar from "../MobileBar/MobileBar";
+import { NotificationSpan } from "../../styles/NotificationSpan/NotificationSpan";
 
 const Sidebar = () => {
 	const mobileScreen = useMediaQuery({
@@ -56,6 +57,7 @@ const Sidebar = () => {
 								<p>Reels</p>
 							</div>
 							<div className="navlink-container">
+								<NotificationSpan>1+</NotificationSpan>
 								<RiMessengerLine className="icon-navlink" />{" "}
 								<p>Mensagens</p>
 							</div>
@@ -69,7 +71,7 @@ const Sidebar = () => {
 							</div>
 							<div className="navlink-container">
 								<UserPhoto
-									className="user-photo"
+									className="user-photo icon-navlink"
 									width="30px"
 									height="30px"
 								/>
